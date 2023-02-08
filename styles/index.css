@@ -111,7 +111,7 @@ header,
 
 .container {
     width: 90%;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -126,12 +126,12 @@ header,
 }
 
 .main-image {
-    flex: 1 200px;
+    flex: 1 150px;
     
 }
 
 .expand {
-    flex: 275px;
+    flex: 250px;
 }
 
 img {
@@ -142,7 +142,7 @@ img {
 }
 
 .whatisspacex {
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 
 .section-two-image-container {
@@ -199,6 +199,17 @@ ul {
         border-bottom: 1px dotted #a190b6; 
     }  
 
+    .main-image.expand {
+        flex: 75px; 
+    }
+    
+    .main-image {
+        flex: 1 45px;  
+    } 
+
+
+   
+
 }
 
 @media (min-width: 768px) { /* over 768px */
@@ -247,11 +258,3 @@ ul {
         font-size: 1.125rem;
     }
 } 
-
-/* Dory */
-
-.dory-small {
-    width: 1.5625em;
-    height: 1.5625em;
-    
-}
