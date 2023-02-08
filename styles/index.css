@@ -141,6 +141,10 @@ img {
    
 }
 
+.whatisspacex {
+    margin-top: 1em;
+}
+
 .section-two-image-container {
     display: flex;
     flex-wrap: wrap;
