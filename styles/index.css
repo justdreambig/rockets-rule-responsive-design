@@ -111,7 +111,7 @@ header,
 
 .container {
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -126,12 +126,12 @@ header,
 }
 
 .main-image {
-    flex: 1 250px;
+    flex: 1 200px;
     
 }
 
 .expand {
-    flex: 320px;
+    flex: 275px;
 }
 
 img {
@@ -198,17 +198,6 @@ ul {
     li:not(:last-child) {
         border-bottom: 1px dotted #a190b6; 
     }  
-
-    .main-image.expand {
-        flex: 75px; 
-    }
-    
-    .main-image {
-        flex: 1 45px;  
-    } 
-
-
-   
 
 }
 
