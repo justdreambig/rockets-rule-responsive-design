@@ -28,6 +28,8 @@ h2 {
 
 h3 {
     font-size: 1.25rem;
+    margin-bottom: .5em;
+
 }
 
 p {
@@ -41,9 +43,9 @@ p {
     color: whitesmoke;
 }
 
-.section-two h2 {
+/* .section-two h2 {
     color: inherit;
-}
+} */
 
 /* ----- LINKS ----- */
 
@@ -64,6 +66,7 @@ a:active {
     text-decoration: none;
     display: block;
     padding: 0.5em 1em;
+    margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 4.6px;
 }
@@ -111,18 +114,31 @@ header,
     max-width: 800px;
     margin: 0 auto;
 }
+
 .section-one-image-container {
+    max-width: 800px;
+    line-height: 0;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-    margin: 0 auto 2em;
+    gap: 0.5em;
+    
 }
 
-.main-images {
-    width: 100%;
-    display: block;
-    max-width: 220px;
+.main-image {
+    flex: 1 150px;
     
+}
+
+.expand {
+    flex: 250px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
 }
 
 .section-two-image-container {
@@ -131,18 +147,21 @@ header,
     gap: 1em;
 }
 
-.feature-image {
-    width: 100%;
-    border-radius: 4.6px;
-}
 
 .feature-item {
     flex: 1 260px;
 }
+ 
+
+.feature-image {
+    width: 375px;
+    height: 250px;
+    border-radius: 4.6px;
+}
+
 
 footer {
     text-align: center;
-    color: #5f29a3;
 }
 
 /* ----- NAVIGATION ----- */
@@ -161,9 +180,9 @@ ul {
     list-style-type: none;
 }
 
-/* ----- MEDIA QUERIES ----- */
+/* ----- MEDIA QUERIES ----- */ 
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {  /* over 768px */
     header {
         text-align: center;
     }
@@ -173,11 +192,23 @@ ul {
     }
  
     li:not(:last-child) {
-        border-bottom: 1px dotted #a190b6;
+        border-bottom: 1px dotted #a190b6; 
     }  
+
+    .main-image.expand {
+        flex: 75px; 
+    }
+    
+    .main-image {
+        flex: 1 45px;  
+    } 
+
+
+   
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* over 768px */
     header,
     section,
     footer {
@@ -210,6 +241,10 @@ ul {
     h2 {
         font-size: 1.75rem;
     }
+
+    h3 {
+        margin-bottom: .5em;
+    }
     
     .subheading {
         font-size: 1.25rem;
@@ -218,4 +253,12 @@ ul {
     p {
         font-size: 1.125rem;
     }
+} 
+
+/* Dory */
+
+.dory-small {
+    width: 1.5625em;
+    height: 1.5625em;
+    
 }
