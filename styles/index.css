@@ -126,12 +126,12 @@ header,
 }
 
 .main-image {
-    flex: 1 150px;
+    flex: 1 250px;
     
 }
 
 .expand {
-    flex: 250px;
+    flex: 320px;
 }
 
 img {
