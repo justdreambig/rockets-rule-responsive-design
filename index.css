@@ -154,8 +154,9 @@ header,
  
 
 .feature-image {
-    width: 100%;
-    border-radius: 4.6px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 
@@ -199,11 +200,11 @@ ul {
     }  
 
     .main-image.expand {
-        flex: 75px; 
+        flex: 150px; 
     }
     
     .main-image {
-        flex: 1 45px;  
+        flex: 1 75px;  
     } 
 
 
