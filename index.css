@@ -123,11 +123,11 @@ header,
 }
 
 .main-image {
-    flex: 1 270px;
+    flex: 1 100px;
 }
 
-.expand {
-    flex: 325px;
+.main-image.expand {
+    flex: 175px;
 }
 
 .section-one-image-container img {
@@ -139,6 +139,10 @@ header,
 
 .whatisspacex {
     margin-top: 1.5em;
+}
+
+.section-two-headline {
+    margin-bottom: 2em;
 }
 
 .section-two-container {
